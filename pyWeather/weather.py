@@ -10,7 +10,7 @@ base_url = "http://api.openweathermap.org/data/2.5/weather?"
 # input city name here
 city_name = input('Enter city name: ')
 
-# get complete url for
+# create complete url to be used for get request
 complete_url = base_url + 'appid=' + api_key + '&q=' + city_name
 response = requests.get(complete_url)
 x = response.json()
